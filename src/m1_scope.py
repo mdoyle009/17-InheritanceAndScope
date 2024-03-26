@@ -68,33 +68,33 @@ main()
 ###############################################################################
 # 
 #   Location 1          Location 2          Location 3
-#   a                   a                   a               
-#   m                   m                   m               
-#   self.a              self.a              self.a          
-#   self.m              self.m              self.m          
-#   t1.a                t1.a                t1.a            
-#   t1.m                t1.m                t1.m            
-#   t2.a                t2.a                t2.a            
-#   t2.m                t2.m                t2.m            
+#   a = 10              a = 10              a = 20             
+#   m = X               m = X               m = X              
+#   self.a = X          self.a = 5          self.a = X         
+#   self.m = X          self.m = 13         self.m = X         
+#   t1.a = X            t1.a = X            t1.a = X           
+#   t1.m = X            t1.m = X            t1.m = X           
+#   t2.a = X            t2.a = X            t2.a = X           
+#   t2.m = X            t2.m = X            t2.m = X           
 #
 #   Location 4          Location 5          Location 6
-#   a                   a                   a               
-#   m                   m                   m               
-#   self.a              self.a              self.a          
-#   self.m              self.m              self.m          
-#   t1.a                t1.a                t1.a            
-#   t1.m                t1.m                t1.m            
-#   t2.a                t2.a                t2.a            
-#   t2.m                t2.m                t2.m            
+#   a = 34              a = 34              a = 20              
+#   m = 25              m = 25              m = X              
+#   self.a = X          self.a = X          self.a = X         
+#   self.m = X          self.m = X          self.m = X         
+#   t1.a = X            t1.a = X            t1.a = X           
+#   t1.m = X            t1.m = 28           t1.m = X           
+#   t2.a = X            t2.a = X            t2.a = X           
+#   t2.m = X            t2.m = X            t2.m = X           
 #
 #   Location 7          Location 8          Location 9
-#   a                   a                   a               
-#   m                   m                   m               
-#   self.a              self.a              self.a          
-#   self.m              self.m              self.m          
-#   t1.a                t1.a                t1.a            
-#   t1.m                t1.m                t1.m            
-#   t2.a                t2.a                t2.a            
-#   t2.m                t2.m                t2.m            
+#   a = 21              a = 20              a = 28              
+#   m = 3               m = X               m = 21              
+#   self.a = X          self.a = X          self.a = X         
+#   self.m = X          self.m = X          self.m = X         
+#   t1.a = X            t1.a = X            t1.a = X           
+#   t1.m = X            t1.m = X            t1.m = X           
+#   t2.a = X            t2.a = X            t2.a = X           
+#   t2.m = X            t2.m = X            t2.m = X           
 #
 ###############################################################################
