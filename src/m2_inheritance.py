@@ -68,17 +68,19 @@ class Bunny(Pet):
         about.color = color
         about.personality = personality
     def eat(about):
-        if personality == "clumsy":
-            print(f"{about.name} is so clumsy! It knocked over the food bowl!")
-        if personality == "proper":
+        if about.personality == "clumsy":
+            print(f"{about.name} is so clumsy! {about.name} knocked over the food bowl!")
+        if about.personality == "proper":
             print(f"Like a proper bunny, {about.name} gracefully ate the food.")
+        if about.personality == "stubborn":
+            print(f"{about.name} stubbornly refuses to eat the food until pet.")
     def stare(about):
         print(f"{about.name} stares mindlessly at your bedroom wall. What is it thinking?")
     def groom(about):
         print(f"You softly groom {about.name}'s {about.color} fur.")
 
 ###############################################################################
-# TODO: 3. (4 pts)
+# DONE: 3. (4 pts)
 #
 #   Now let's use our classes!
 #
@@ -107,4 +109,10 @@ def main():
     bunny = Bunny("Oscar", 7, "orange", "clumsy")
     print(dog)
     print(bunny)
+    bunny.stare
+    bunny.eat()
+    dog.fetch()
+    dog.speak()
+    bunny.speak()
+    bunny.groom()
 main()
