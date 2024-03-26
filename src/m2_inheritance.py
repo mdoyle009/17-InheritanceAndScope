@@ -1,5 +1,5 @@
 ###############################################################################
-# TODO: 1. (4 pts)
+# DONE: 1. (4 pts)
 #
 #   For this module, we are going to build off our Pet class that we created in
 #   m2 of the session 16 coding exercises.
@@ -26,9 +26,23 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+class Pet:
+    def __init__(about, name, age):
+        about.name = name
+        about.age = age
+    def __str__(about):
+        return f"Name: {about.name}, Age: {about.age}"
+    def speak(about):
+        print(f"{about.name} looks at you in silence.")
+
+class Dog(Pet):
+    def fetch(about):
+        print(f"{about.name} ran to get the stick!")
+    def speak(about):
+        print(f"{about.name}: Bark! Bark! Bark!")
 
 ###############################################################################
-# TODO: 2. (4 pts)
+# DONE: 2. (4 pts)
 #
 #   Now, write your own class of whatever type of pet you wish.
 #
@@ -46,6 +60,22 @@
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+
+class Bunny(Pet):
+    def __init__(about, name, age, color, personality):
+        about.name = name
+        about.age = age
+        about.color = color
+        about.personality = personality
+    def eat(about):
+        if personality == "clumsy":
+            print(f"{about.name} is so clumsy! It knocked over the food bowl!")
+        if personality == "proper":
+            print(f"Like a proper bunny, {about.name} gracefully ate the food.")
+    def stare(about):
+        print(f"{about.name} stares mindlessly at your bedroom wall. What is it thinking?")
+    def groom(about):
+        print(f"You softly groom {about.name}'s {about.color} fur.")
 
 ###############################################################################
 # TODO: 3. (4 pts)
@@ -72,3 +102,9 @@
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
 
+def main():
+    dog = Dog("Buster", 4)
+    bunny = Bunny("Oscar", 7, "orange", "clumsy")
+    print(dog)
+    print(bunny)
+main()
